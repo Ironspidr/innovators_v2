@@ -2,10 +2,11 @@ import { ComplexNavbar } from "../components/navbar";
 import { Banner } from "../components/banner";
 import backdrop from "../assets/img/backdrop_1.jpg";
 import { Footer } from "../components/footer";
+import Associates from "../components/associates";
 
 export default function About() {
   return (
-    <div className="App font-family:league-spartan">
+    <div className="App font-family:league-spartan dark:bg-back-dark">
       <div>
         <header className="App-header pt-5 justify-center">
           <ComplexNavbar />
@@ -33,6 +34,7 @@ export default function About() {
           img={backdrop}
         />
       </div>
+
       <Footer />
     </div>
   );
@@ -41,17 +43,17 @@ export default function About() {
 function Mission(props) {
   return (
     <div className="pt-10">
-      <h1 className="font-semibold text-3xl flex justify-center">
+      <h1 className="font-semibold text-3xl flex justify-center dark:text-font-dark">
         {props.title}
       </h1>
-      <div className="flex flex-col justify-center items-center text-center pt-5">
+      <div className="flex flex-col justify-center items-center text-center pt-5 dark:text-font-dark">
         <div className="w-1/2">
           <p className="font-thisFont text-xl">{props.desc}</p>
         </div>
         <div className="pt-10">
           <img
             src={props.img}
-            className="h-96 w-full rounded-lg object-cover object-center"
+            className="h-96 w-full rounded-lg object-cover object-center border-color-dark border-4 dark:border-2"
           ></img>
         </div>
       </div>

@@ -8,7 +8,6 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  Avatar,
   Card,
   IconButton,
 } from "@material-tailwind/react";
@@ -17,37 +16,38 @@ import {
   UserCircleIcon,
   Square3Stack3DIcon,
   ChevronDownIcon,
-  RocketLaunchIcon,
   Bars2Icon,
 } from "@heroicons/react/24/solid";
-import logo1 from "../assets/logo_woBg.png";
 
+import logo1 from "../assets/logo_woBg.png";
+import DarkModeButton from "./darkModeSwitch";
+import logoW from "../assets/logo_woBg_white.png";
 // nav list menu
 const navListMenuItems = [
   {
     title: "Virtual Medical Missions",
     description:
       "Learn how students at Eastvale Innovators are making a difference in the world by creating Telemedicine technology for third world regions.",
+    link: "/vmm",
   },
   {
     title: "ERHS Mustangs App",
     description:
       "Check out the progress of the ERHS Mustangs App, a project by Eastvale Innovators to help students stay connected with their school admin and peers.",
+    link: "/mustangsApp",
   },
 ];
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const renderItems = navListMenuItems.map(({ title, description }) => (
-    <a href="#" key={title}>
-      <MenuItem>
-        <Typography variant="h6" color="blue-gray" className="mb-1">
-          {title}
-        </Typography>
-        <Typography variant="small" color="gray" className="font-normal">
+  const renderItems = navListMenuItems.map(({ title, description, link }) => (
+    <a href={link} key={title}>
+      <MenuItem className="">
+        <h1 className="mb-1 font-semibold dark:text-font-dark">{title}</h1>
+        <p className="font-normal text-font-light dark:text-font-dark">
           {description}
-        </Typography>
+        </p>
       </MenuItem>
     </a>
   ));
@@ -57,8 +57,8 @@ function NavListMenu() {
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography as="a" href="#" variant="small" className="font-normal">
-            <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
-              <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
+            <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full dark:text-font-dark">
+              <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500 dark:text-font-dark" />{" "}
               Projects
               <ChevronDownIcon
                 strokeWidth={2}
@@ -69,7 +69,7 @@ function NavListMenu() {
             </MenuItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
+        <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid dark:bg-back-dark">
           <Card
             color="blue-gray"
             shadow={false}
@@ -132,14 +132,15 @@ function NavList() {
           href={link}
           variant="small"
           color="gray"
-          className="font-medium text-blue-gray-500"
+          className="font-medium text-blue-gray-500 dark:text-font-dark"
         >
           <MenuItem className="flex items-center gap-2 lg:rounded-full">
             {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
-            <span className="text-gray-900"> {label}</span>
+            <span className="text-gray-900 dark:text-font-dark"> {label}</span>
           </MenuItem>
         </Typography>
       ))}
+      <DarkModeButton />
     </ul>
   );
 }
@@ -157,10 +158,23 @@ export function ComplexNavbar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
-      <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
+    <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 dark:bg-primary-dark dark:text-font-dark">
+      <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 ">
         <a href="/">
-          <img src={logo1} alt="logo" width="50" height="50"></img>
+          <img
+            src={logo1}
+            alt="logo"
+            width="50"
+            height="50"
+            className="drop-shadow dark:hidden"
+          ></img>
+          <img
+            src={logoW}
+            alt="logo"
+            width="50"
+            height="50"
+            className="drop-shadow hidden dark:block"
+          />
         </a>
 
         <IconButton
@@ -177,7 +191,7 @@ export function ComplexNavbar() {
         </div>
 
         <Button size="sm" variant="text">
-          <span>Contact Us</span>
+          <span className="dark:text-font-dark">Contact Us</span>
         </Button>
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">

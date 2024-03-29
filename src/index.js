@@ -8,6 +8,8 @@ import About from "./pages/about";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Clubs from "./pages/clubs";
 import NoPage from "./pages/nopage";
+import Telemed from "./pages/vmm";
+import MustangsApp from "./pages/mustangsApp";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/clubs" element={<Clubs />} />
+        <Route path="/vmm" element={<Telemed />} />
+        <Route path="/mustangsApp" element={<MustangsApp />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
@@ -29,7 +33,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

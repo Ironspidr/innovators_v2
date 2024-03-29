@@ -21,7 +21,7 @@ import Associates from "../components/associates";
 import { Footer } from "../components/footer";
 export default function Home() {
   return (
-    <div className="App font-family:league-spartan">
+    <div className="App font-family:league-spartan bg-back-light dark:bg-back-dark">
       <div>
         <header className="App-header pt-5 justify-center">
           <ComplexNavbar />
@@ -45,7 +45,7 @@ export default function Home() {
 function ActionItems() {
   return (
     <div className=" p-10">
-      <h1 className="flex justify-center text-3xl p-2 pb-5 font-bold">
+      <h1 className="flex justify-center text-3xl p-2 pb-5 font-bold text-font-light dark:text-font-dark">
         Learn More
       </h1>
       <div className="flex justify-center">
@@ -75,17 +75,19 @@ function ActionItems() {
 
 function CardDefault(props) {
   return (
-    <Card className="mt-6 w-96">
-      <CardHeader color="blue-gray" className="relative h-56">
+    <Card className="mt-6 w-96 dark:bg-primary-dark">
+      <CardHeader color="blue-gray" className="h-42">
         <img src={props.timg} alt="card-image" />
       </CardHeader>
       <CardBody>
-        <h1 className="mb-2 text-2xl font-semibold">{props.header}</h1>
-        <h1>{props.desc}</h1>
+        <h1 className="mb-2 text-2xl font-semibold dark:text-font-dark">
+          {props.header}
+        </h1>
+        <h1 className="dark:text-font-dark">{props.desc}</h1>
       </CardBody>
       <CardFooter className="pt-0">
         <a href={props.dir}>
-          <Button>Read More</Button>
+          <Button color="red">Read More</Button>
         </a>
       </CardFooter>
     </Card>
@@ -94,18 +96,20 @@ function CardDefault(props) {
 
 function CardMenu(props) {
   return (
-    <Card className="mt-6 w-96">
+    <Card className="mt-6 w-96 dark:bg-primary-dark">
       <CardHeader color="blue-gray" className="relative h-56">
         <img src={props.timg} alt="card-image" />
       </CardHeader>
       <CardBody>
-        <h1 className="mb-2 text-2xl font-semibold">{props.header}</h1>
-        <h1>{props.desc}</h1>
+        <h1 className="mb-2 text-2xl text-font-light font-semibold dark:text-font-dark">
+          {props.header}
+        </h1>
+        <h1 className="dark:text-font-dark">{props.desc}</h1>
       </CardBody>
       <CardFooter className="pt-0">
-        <Menu>
+        <Menu className="bg-back-light dark:bg-primary">
           <MenuHandler>
-            <Button>More Here</Button>
+            <Button color="red">More Here</Button>
           </MenuHandler>
           <MenuList>
             <MenuItem>
@@ -115,7 +119,7 @@ function CardMenu(props) {
             </MenuItem>
             <MenuItem>
               <a href={props.dir}>
-                <Button>Mustangs App</Button>
+                <Button color="blue">Mustangs App</Button>
               </a>
             </MenuItem>
           </MenuList>

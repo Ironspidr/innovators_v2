@@ -5,7 +5,7 @@ import VMM from "../assets/img/VMM Logo.png";
 export default function Associates() {
   return (
     <div className="">
-      <h1 className="flex justify-center text-3xl font-semibold pt-10">
+      <h1 className="flex justify-center text-3xl font-semibold pt-10 dark:text-font-dark">
         In Association With
       </h1>
       <div className="flex justify-center items-center">

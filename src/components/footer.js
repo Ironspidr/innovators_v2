@@ -18,27 +18,18 @@ export function Footer() {
     <footer className="relative w-full pt-10">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <h1 className="text-3xl font-semibold">Eastvale Innovators</h1>
-          <div className="grid grid-cols-3 justify-between gap-4">
+          <h1 className="text-3xl font-semibold text-font-light dark:text-font-dark">
+            Eastvale Innovators
+          </h1>
+          <div className="grid grid-cols-3 justify-between gap-4 text-font-light dark:text-font-dark">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-3 font-medium opacity-40"
-                >
-                  {title}
-                </Typography>
+                <p className="font-semibold">{title}</p>
                 {items.map((link) => (
                   <li key={link}>
-                    <Typography
-                      as="a"
-                      href="#"
-                      color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
-                    >
+                    <p className="opacity-80 transition-opacity hover:opacity-40 py-1.5 text-font-lig dark:text-font-dark hover:text-blue-gray-900">
                       {link}
-                    </Typography>
+                    </p>
                   </li>
                 ))}
               </ul>
@@ -48,7 +39,7 @@ export function Footer() {
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 dark:text-font-dark"
           >
             &copy; {currentYear}{" "}
             <a href="https://material-tailwind.com/">Eastvale Innovators</a>.
@@ -58,7 +49,7 @@ export function Footer() {
             <Typography
               as="a"
               href="https://www.instagram.com/eastvale_innovators"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:opacity-40 text-font-light dark:text-font-dark"
             >
               <svg
                 className="h-5 w-5"
@@ -77,7 +68,7 @@ export function Footer() {
             <Typography
               as="a"
               href="https://github.com/Eastvale-Innovators"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:opacity-100 dark:text-font-dark"
             >
               <svg
                 className="h-5 w-5"
