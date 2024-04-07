@@ -52,7 +52,7 @@ function GirlsWC() {
       <h1 className="flex justify-center text-3xl text-font-light dark:text-font-dark font-thisFont font-bold">
         Girls Who Code
       </h1>
-      <div className="flex flex-row items-center justify-center px-52">
+      <div className="flex lg:flex-row lg:items-center justify-center lg:px-52 md:flex-col xxs:flex-col xxs:px-10 xxs:items-center md:items-center">
         <div className="w-3/4">
           <SimplyTab />
         </div>

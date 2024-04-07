@@ -44,29 +44,37 @@ export default function Home() {
 
 function ActionItems() {
   return (
-    <div className=" p-10">
-      <h1 className="flex justify-center text-3xl p-2 pb-5 font-bold text-font-light dark:text-font-dark">
+    <div className="">
+      <h1 className="flex justify-center text-3xl p-2 pb-5 font-bold text-font-light dark:text-font-dark xxs:items-center">
         Learn More
       </h1>
-      <div className="flex justify-center">
-        <div className="flex lg:flex-row justify-between space-x-5 sm:space-y-10 sm:items-center w-3/4 sm:flex-col max-[320px]:flex-col">
-          <CardDefault
-            header="About Us"
-            desc="Check out how students at the Eastvale STEM Academy & Eleanor Roosevelt High School are gaining real world experiences and gearing up for the future!"
-            dir="/about"
-            timg={aboutus}
-          />
-          <CardDefault
-            header="Clubs"
-            desc="Eastvale Innovators are involved in various clubs that work to benefit the students of ERHS and eSTEM as well as the greater eastvale community. Find out more about their various activities."
-            dir="/clubs"
-            timg={clubs}
-          />
-          <CardMenu
-            header="Projects"
-            desc="Through projects, internship oppurunities, and collaborative experiences, Eastvale Innovators are learning to solve real world problems. "
-            timg={branching}
-          />
+      <div className="flex justify-center ">
+        <div className="flex lg:flex-row justify-between xxs:w-10 xxs:items-center sm:space-y-10 sm:items-center w-3/4 sm:flex-col xxs:flex-col">
+          <div className="xxs:py-5">
+            <CardDefault
+              header="About Us"
+              desc="Check out how students at the Eastvale STEM Academy & Eleanor Roosevelt High School are gaining real world experiences and gearing up for the future!"
+              dir="/about"
+              timg={aboutus}
+            />
+          </div>
+
+          <div className="lg:px-5 xxs:py-5">
+            <CardDefault
+              header="Clubs"
+              desc="Eastvale Innovators are involved in various clubs that work to benefit the students of ERHS and eSTEM as well as the greater eastvale community. Find out more about their various activities."
+              dir="/clubs"
+              timg={clubs}
+            />
+          </div>
+
+          <div>
+            <CardMenu
+              header="Projects"
+              desc="Through projects, internship oppurunities, and collaborative experiences, Eastvale Innovators are learning to solve real world problems. "
+              timg={branching}
+            />
+          </div>
         </div>
       </div>
     </div>
