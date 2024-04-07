@@ -49,7 +49,7 @@ function ActionItems() {
         Learn More
       </h1>
       <div className="flex justify-center">
-        <div className="flex flex-row justify-between w-3/4">
+        <div className="flex lg:flex-row justify-between space-x-5 sm:space-y-10 sm:items-center w-3/4 sm:flex-col max-[320px]:flex-col">
           <CardDefault
             header="About Us"
             desc="Check out how students at the Eastvale STEM Academy & Eleanor Roosevelt High School are gaining real world experiences and gearing up for the future!"
@@ -64,7 +64,7 @@ function ActionItems() {
           />
           <CardMenu
             header="Projects"
-            desc="Through projects, internship oppurunities, and collaborative experiences, Eastvale Innovators are learning to solve real world problems. Find out more about the projects that they are currently working on."
+            desc="Through projects, internship oppurunities, and collaborative experiences, Eastvale Innovators are learning to solve real world problems. "
             timg={branching}
           />
         </div>
@@ -80,7 +80,7 @@ function CardDefault(props) {
         <img src={props.timg} alt="card-image" />
       </CardHeader>
       <CardBody>
-        <h1 className="mb-2 text-2xl font-semibold dark:text-font-dark">
+        <h1 className="text-2xl font-semibold dark:text-font-dark">
           {props.header}
         </h1>
         <h1 className="dark:text-font-dark">{props.desc}</h1>

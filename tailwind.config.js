@@ -21,6 +21,9 @@ module.exports = withMT({
         "secondary-dark": "#9d502f",
         "accent-dark": "#9d502f",
       },
+      screens: {
+        xxs: { min: "200px", max: "500px" },
+      },
     },
     plugins: [], // Add the missing plugins property here
   },

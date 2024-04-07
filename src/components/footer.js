@@ -17,25 +17,6 @@ export function Footer() {
   return (
     <footer className="relative w-full pt-10">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <h1 className="text-3xl font-semibold text-font-light dark:text-font-dark">
-            Eastvale Innovators
-          </h1>
-          <div className="grid grid-cols-3 justify-between gap-4 text-font-light dark:text-font-dark">
-            {LINKS.map(({ title, items }) => (
-              <ul key={title}>
-                <p className="font-semibold">{title}</p>
-                {items.map((link) => (
-                  <li key={link}>
-                    <p className="opacity-80 transition-opacity hover:opacity-40 py-1.5 text-font-lig dark:text-font-dark hover:text-blue-gray-900">
-                      {link}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            ))}
-          </div>
-        </div>
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"

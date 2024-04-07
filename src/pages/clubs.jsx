@@ -32,27 +32,27 @@ export default function Clubs() {
 }
 
 function GirlsWC() {
-  const data = [
-    {
-      label: "Mission",
-      value: "mission",
-      desc: `Our Girls Who Code club at Eleanor Roosevelt High School is dedicated to bridging the gender gap in technology through empowering young women to learn, innovate, and excel within the field of computer science.
-\n Our mission reaches beyond just coding as we strive to redefine the stereotype of a programmer by showcasing and refining the talents of our members. Through coding projects, competitions, and community engagement, we strive to cultivate a supportive environment for our members where they can feel inspired to pursue their passions within computer science.
-`,
-    },
-    {
-      label: "Vision",
-      value: "vision",
-      desc: `Our vision is to create an environment both in our school and community where girls are not discouraged from pursuing their computer science passions, where diversity and inclusivity can thrive. `,
-    },
-  ];
+  //   const data = [
+  //     {
+  //       label: "Mission",
+  //       value: "mission",
+  //       desc: `Our Girls Who Code club at Eleanor Roosevelt High School is dedicated to bridging the gender gap in technology through empowering young women to learn, innovate, and excel within the field of computer science.
+  // \n Our mission reaches beyond just coding as we strive to redefine the stereotype of a programmer by showcasing and refining the talents of our members. Through coding projects, competitions, and community engagement, we strive to cultivate a supportive environment for our members where they can feel inspired to pursue their passions within computer science.
+  // `,
+  //     },
+  //     {
+  //       label: "Vision",
+  //       value: "vision",
+  //       desc: `Our vision is to create an environment both in our school and community where girls are not discouraged from pursuing their computer science passions, where diversity and inclusivity can thrive. `,
+  //     },
+  //   ];
 
   return (
     <div className="pt-10">
       <h1 className="flex justify-center text-3xl text-font-light dark:text-font-dark font-thisFont font-bold">
         Girls Who Code
       </h1>
-      <div className="flex md:flex-row flex-col items-center justify-center px-52">
+      <div className="flex flex-row items-center justify-center px-52">
         <div className="w-3/4">
           <SimplyTab />
         </div>
@@ -98,74 +98,74 @@ function SimplyTab() {
   );
 }
 
-function SimpleTabs() {
-  const data = [
-    {
-      label: "Mission",
-      value: "mission",
-      desc: `Our Girls Who Code club at Eleanor Roosevelt High School is dedicated to bridging the gender gap in technology through empowering young women to learn, innovate, and excel within the field of computer science.
-\n Our mission reaches beyond just coding as we strive to redefine the stereotype of a programmer by showcasing and refining the talents of our members. Through coding projects, competitions, and community engagement, we strive to cultivate a supportive environment for our members where they can feel inspired to pursue their passions within computer science.
-`,
-    },
-    {
-      label: "Vision",
-      value: "vision",
-      desc: `Our vision is to create an environment both in our school and community where girls are not discouraged from pursuing their computer science passions, where diversity and inclusivity can thrive. `,
-    },
-  ];
+// function SimpleTabs() {
+//   const data = [
+//     {
+//       label: "Mission",
+//       value: "mission",
+//       desc: `Our Girls Who Code club at Eleanor Roosevelt High School is dedicated to bridging the gender gap in technology through empowering young women to learn, innovate, and excel within the field of computer science.
+// \n Our mission reaches beyond just coding as we strive to redefine the stereotype of a programmer by showcasing and refining the talents of our members. Through coding projects, competitions, and community engagement, we strive to cultivate a supportive environment for our members where they can feel inspired to pursue their passions within computer science.
+// `,
+//     },
+//     {
+//       label: "Vision",
+//       value: "vision",
+//       desc: `Our vision is to create an environment both in our school and community where girls are not discouraged from pursuing their computer science passions, where diversity and inclusivity can thrive. `,
+//     },
+//   ];
 
-  return (
-    <Tabs value="mission" className="pr-10">
-      <TabsHeader className="">
-        {data.map(({ label, value }) => (
-          <Tab key={value} value={value}>
-            {label}
-          </Tab>
-        ))}
-      </TabsHeader>
-      <TabsBody className="pt-10">
-        {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value} className="py-0">
-            {desc}
-          </TabPanel>
-        ))}
-      </TabsBody>
-    </Tabs>
-  );
-}
+//   return (
+//     <Tabs value="mission" className="pr-10">
+//       <TabsHeader className="">
+//         {data.map(({ label, value }) => (
+//           <Tab key={value} value={value}>
+//             {label}
+//           </Tab>
+//         ))}
+//       </TabsHeader>
+//       <TabsBody className="pt-10">
+//         {data.map(({ value, desc }) => (
+//           <TabPanel key={value} value={value} className="py-0">
+//             {desc}
+//           </TabPanel>
+//         ))}
+//       </TabsBody>
+//     </Tabs>
+//   );
+// }
 
-function VerticalTabs() {
-  const data = [
-    {
-      label: "Mission",
-      value: "mission",
-      desc: `Our Girls Who Code club at Eleanor Roosevelt High School is dedicated to bridging the gender gap in technology through empowering young women to learn, innovate, and excel within the field of computer science.
-\n Our mission reaches beyond just coding as we strive to redefine the stereotype of a programmer by showcasing and refining the talents of our members. Through coding projects, competitions, and community engagement, we strive to cultivate a supportive environment for our members where they can feel inspired to pursue their passions within computer science.
-`,
-    },
-    {
-      label: "Vision",
-      value: "vision",
-      desc: `Our vision is to create an environment both in our school and community where girls are not discouraged from pursuing their computer science passions, where diversity and inclusivity can thrive. `,
-    },
-  ];
+// function VerticalTabs() {
+//   const data = [
+//     {
+//       label: "Mission",
+//       value: "mission",
+//       desc: `Our Girls Who Code club at Eleanor Roosevelt High School is dedicated to bridging the gender gap in technology through empowering young women to learn, innovate, and excel within the field of computer science.
+// \n Our mission reaches beyond just coding as we strive to redefine the stereotype of a programmer by showcasing and refining the talents of our members. Through coding projects, competitions, and community engagement, we strive to cultivate a supportive environment for our members where they can feel inspired to pursue their passions within computer science.
+// `,
+//     },
+//     {
+//       label: "Vision",
+//       value: "vision",
+//       desc: `Our vision is to create an environment both in our school and community where girls are not discouraged from pursuing their computer science passions, where diversity and inclusivity can thrive. `,
+//     },
+//   ];
 
-  return (
-    <Tabs value="mission" orientation="vertical">
-      <TabsHeader className="w-32">
-        {data.map(({ label, value }) => (
-          <Tab key={value} value={value}>
-            {label}
-          </Tab>
-        ))}
-      </TabsHeader>
-      <TabsBody>
-        {data.map(({ value, desc }) => (
-          <TabPanel key={value} value={value} className="py-0">
-            {desc}
-          </TabPanel>
-        ))}
-      </TabsBody>
-    </Tabs>
-  );
-}
+//   return (
+//     <Tabs value="mission" orientation="vertical">
+//       <TabsHeader className="w-32">
+//         {data.map(({ label, value }) => (
+//           <Tab key={value} value={value}>
+//             {label}
+//           </Tab>
+//         ))}
+//       </TabsHeader>
+//       <TabsBody>
+//         {data.map(({ value, desc }) => (
+//           <TabPanel key={value} value={value} className="py-0">
+//             {desc}
+//           </TabPanel>
+//         ))}
+//       </TabsBody>
+//     </Tabs>
+//   );
+// }

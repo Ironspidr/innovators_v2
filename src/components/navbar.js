@@ -53,7 +53,7 @@ function NavListMenu() {
   ));
 
   return (
-    <React.Fragment>
+    <React.Fragment className="sm:hidden">
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography as="a" href="#" variant="small" className="font-normal">
@@ -96,8 +96,8 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
-      <MenuItem className="flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
+      <MenuItem className="flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden dark:text-white">
+        <Square3Stack3DIcon className="h-[18px] w-[18px] text-blue-gray-500 dark:text-font-dark" />{" "}
         Pages{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
@@ -186,7 +186,7 @@ export function ComplexNavbar() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
-        <div className="lg:block flex items-center">
+        <div className="lg:block sm:hidden xxs:hidden flex items-center">
           <NavList />
         </div>
 
