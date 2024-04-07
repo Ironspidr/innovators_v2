@@ -5,11 +5,18 @@ import layout from "./pages/layout";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/home";
 import About from "./pages/about";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  HashRouter,
+  Route,
+  Routes,
+  createHashRouter,
+} from "react-router-dom";
 import Clubs from "./pages/clubs";
 import NoPage from "./pages/nopage";
 import Telemed from "./pages/vmm";
 import MustangsApp from "./pages/mustangsApp";
+import { HashRouter } from "react-router-dom";
 
 export default function App() {
   return (
@@ -25,6 +32,13 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
