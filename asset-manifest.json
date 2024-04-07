@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/innovators_v2/static/css/main.6908ac1f.css",
+    "main.js": "/innovators_v2/static/js/main.7cbec802.js",
+    "static/js/453.b0a3a9cd.chunk.js": "/innovators_v2/static/js/453.b0a3a9cd.chunk.js",
+    "static/media/medical story.png": "/innovators_v2/static/media/medical story.8781ba3c71660c17b41f.png",
+    "static/media/gwc_outreach.png": "/innovators_v2/static/media/gwc_outreach.459699f48d98386eb054.png",
+    "static/media/aboutUs.jpg": "/innovators_v2/static/media/aboutUs.2a8ed01bcbb1783246e7.jpg",
+    "static/media/backdrop_1.jpg": "/innovators_v2/static/media/backdrop_1.01a198a4614e07ea8541.jpg",
+    "static/media/home-page-banner.png": "/innovators_v2/static/media/home-page-banner.d9868eecf336cd2787e7.png",
+    "static/media/VMM Logo.png": "/innovators_v2/static/media/VMM Logo.7c8952c8af38bcaa47bc.png",
+    "static/media/logo_woBg.png": "/innovators_v2/static/media/logo_woBg.267c26bd684de627c551.png",
+    "static/media/logo_woBg_white.png": "/innovators_v2/static/media/logo_woBg_white.66c7fc5c654bc26f9595.png",
+    "index.html": "/innovators_v2/index.html",
+    "main.6908ac1f.css.map": "/innovators_v2/static/css/main.6908ac1f.css.map",
+    "main.7cbec802.js.map": "/innovators_v2/static/js/main.7cbec802.js.map",
+    "453.b0a3a9cd.chunk.js.map": "/innovators_v2/static/js/453.b0a3a9cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6908ac1f.css",
+    "static/js/main.7cbec802.js"
+  ]
+}
