@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import layout from "./pages/layout";
+import layout from "./templates/layout";
 import reportWebVitals from "./reportWebVitals";
 
 import {
@@ -12,29 +12,32 @@ import {
   createHashRouter,
 } from "react-router-dom";
 
-import Home from "./pages/home";
-import About from "./pages/about";
-import Clubs from "./pages/clubs";
-import NoPage from "./pages/nopage";
-import Telemed from "./pages/vmm";
-import MustangsApp from "./pages/mustangsApp";
+import Home from "./templates/home";
+import About from "./templates/about";
+import Clubs from "./templates/clubs";
+import NoPage from "./templates/nopage";
+import Telemed from "./templates/vmm";
+import MustangsApp from "./templates/mustangsApp";
+import { ComplexNavbar } from "./components/navbar";
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/clubs" element={<Clubs />} />
-      <Route path="/vmm" element={<Telemed />} />
-      <Route path="/mustangsApp" element={<MustangsApp />} />
-      <Route path="*" element={<NoPage />} />
-    </Routes>
+    <>
+      <ComplexNavbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/clubs" element={<Clubs />} />
+        <Route path="/vmm" element={<Telemed />} />
+        <Route path="/mustangsApp" element={<MustangsApp />} />
+      </Routes>
+    </>
   );
 }
 
 const router = createHashRouter([
   {
-    path: "/*",
+    path: "/",
     element: <App />,
   },
 ]);
@@ -42,9 +45,9 @@ const router = createHashRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 

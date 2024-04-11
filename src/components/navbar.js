@@ -22,6 +22,7 @@ import {
 import logo1 from "../assets/logo_woBg.png";
 import DarkModeButton from "./darkModeSwitch";
 import logoW from "../assets/logo_woBg_white.png";
+import { Link } from "react-router-dom";
 // nav list menu
 const navListMenuItems = [
   {
@@ -42,14 +43,14 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const renderItems = navListMenuItems.map(({ title, description, link }) => (
-    <a href={link} key={title}>
+    <Link to={link}>
       <MenuItem className="">
         <h1 className="mb-1 font-semibold dark:text-font-dark">{title}</h1>
         <p className="font-normal text-font-light dark:text-font-dark">
           {description}
         </p>
       </MenuItem>
-    </a>
+    </Link>
   ));
 
   return (
