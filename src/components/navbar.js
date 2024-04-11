@@ -161,7 +161,7 @@ export function ComplexNavbar() {
   return (
     <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6 dark:bg-primary-dark dark:text-font-dark">
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 ">
-        <a href="/">
+        <a href="/#/">
           <img
             src={logo1}
             alt="logo"
