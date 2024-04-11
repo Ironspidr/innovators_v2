@@ -14,8 +14,8 @@ export default function NoPage() {
           <ComplexNavbar />
           <div className="flex items-center justify-center w-full pt-10">
             <Banner
-              title="About Eastvale Innovators"
-              caption="Gearing up for the future!"
+              title="404 Page Not Found"
+              caption="Proceed to Home Page"
               Banner={backdrop}
             />
           </div>
