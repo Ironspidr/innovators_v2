@@ -23,7 +23,6 @@ import { ComplexNavbar } from "./components/navbar";
 export default function App() {
   return (
     <>
-      <ComplexNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
