@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/innovators_v2/static/css/main.6908ac1f.css",
-    "main.js": "/innovators_v2/static/js/main.e9da446d.js",
+    "main.js": "/innovators_v2/static/js/main.acbbabd3.js",
     "static/js/453.b0a3a9cd.chunk.js": "/innovators_v2/static/js/453.b0a3a9cd.chunk.js",
     "static/media/medical story.png": "/innovators_v2/static/media/medical story.8781ba3c71660c17b41f.png",
     "static/media/gwc_outreach.png": "/innovators_v2/static/media/gwc_outreach.459699f48d98386eb054.png",
@@ -13,11 +13,11 @@
     "static/media/logo_woBg_white.png": "/innovators_v2/static/media/logo_woBg_white.66c7fc5c654bc26f9595.png",
     "index.html": "/innovators_v2/index.html",
     "main.6908ac1f.css.map": "/innovators_v2/static/css/main.6908ac1f.css.map",
-    "main.e9da446d.js.map": "/innovators_v2/static/js/main.e9da446d.js.map",
+    "main.acbbabd3.js.map": "/innovators_v2/static/js/main.acbbabd3.js.map",
     "453.b0a3a9cd.chunk.js.map": "/innovators_v2/static/js/453.b0a3a9cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6908ac1f.css",
-    "static/js/main.e9da446d.js"
+    "static/js/main.acbbabd3.js"
   ]
 }
