@@ -63,7 +63,7 @@ function ActionItems() {
             <CardDefault
               header="Clubs"
               desc="Eastvale Innovators are involved in various clubs that work to benefit the students of ERHS and eSTEM as well as the greater eastvale community. Find out more about their various activities."
-              dir="/clubs"
+              dir="/#/clubs"
               timg={clubs}
             />
           </div>
