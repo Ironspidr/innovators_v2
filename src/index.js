@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/#/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/clubs" element={<Clubs />} />
+        <Route path="/#/clubs" element={<Clubs />} />
         <Route path="/vmm" element={<Telemed />} />
         <Route path="/#/mustangsApp" element={<MustangsApp />} />
       </Routes>
